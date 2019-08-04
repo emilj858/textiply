@@ -1,0 +1,15 @@
+.nav-bar-wrapper {
+    .navbar-main {
+        color: red!important;
+        background-color: aqua;
+    }
+    .nav-link-anchor {
+        color: white;
+        padding-right: 10px; 
+        text-decoration: none;
+        
+        &.active {
+            text-decoration: underline;
+        }
+    }
+}
