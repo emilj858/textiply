@@ -1,15 +1,26 @@
 .nav-bar-wrapper {
-    .navbar-main {
-        color: red!important;
-        background-color: aqua;
-    }
+
     .nav-link-anchor {
         color: white;
-        padding-right: 10px; 
+        margin-right: 40px; 
         text-decoration: none;
         
         &.active {
             text-decoration: underline;
         }
+    }
+    @media screen and (min-width: 992px) {
+    .nav-bar-links {
+        margin-left: 100px;
+        padding-top: 3px;
+    }
+}
+    @media screen and (max-width: 992px) {
+        .nav-bar-links {
+            display: inline-grid;
+        }
+}
+    .free-trial-wrapper {
+        float: right;
     }
 }

@@ -1,0 +1,16 @@
+node_modules
+bower_components
+npm-debug.log
+.DS_Store
+build/bundle.js
+build/*.svg
+build/*.eot
+build/*.map
+build/*.ttf
+build/coverage
+/config
+dist
+semantic/dist
+testdist
+.eslintcache
+!.vscode

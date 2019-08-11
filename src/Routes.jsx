@@ -1,14 +1,17 @@
 import React from 'react';
 import {Route} from 'react-router-dom';
 import Header from './Header';
-import Component1 from './components/component1/component1';
-import Component2 from './components/component2/component2';
+
+import Dashboard from './components/dashboard/Dashboard';
+import Messages from './components/messages/Messages';
+import Audience from './components/audience/Audience';
 
 const Routes = () => (
   <div>
     <Header />
-    <Route exact path="/Component1" component={Component1} />
-    <Route exact path="/Component2" component={Component2} />
+    <Route exact path="/" component={Dashboard} />
+    <Route exact path="/messages" component={Messages} />
+    <Route exact path="/audience" component={Audience} />
   </div>
     )
 
