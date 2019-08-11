@@ -1,14 +1,16 @@
 import React, { useState } from 'react';
-import { Button, Table } from 'semantic-ui-react';
+import { Button, Table, Icon } from 'semantic-ui-react';
 import Loader from '../helpers/Loader';
 import AddContactModal from './AddContactModal';
 import UploadCsvModal from './UploadCsvModal';
+import AddTagModal from './AddTagModal';
 
 const Audience = () => {
 
   const [loading, setLoading] = useState(false);
   const [addContactModal, setAddContactModal] = useState(false);
   const [csvModal, setCsvModal] = useState(false);
+  const [addTagModal, setAddTagModal] = useState(false);
 
 
   const tableBody =(
@@ -18,12 +20,17 @@ const Audience = () => {
         <Table.Cell>(858)775-4405</Table.Cell>
         <Table.Cell>100 Park Plaza</Table.Cell>
         <Table.Cell>San Diego</Table.Cell>
+        <Table.Cell>
+          Tag 1
+          <Icon name="plus" className="add-tag-icon" />
+        </Table.Cell>
       </Table.Row>
       <Table.Row>
         <Table.Cell>Emil Juboori</Table.Cell>
         <Table.Cell>(858)775-4405</Table.Cell>
         <Table.Cell>100 Park Plaza</Table.Cell>
         <Table.Cell>San Diego</Table.Cell>
+        <Table.Cell>Tag 2</Table.Cell>
       </Table.Row>
     </React.Fragment>
   )
@@ -48,6 +55,16 @@ const Audience = () => {
     );
   }
 
+  if (addTagModal) {
+    return (
+      <AddTagModal
+        close={() => {
+          setAddTagModal(false);
+        }}
+      />
+    );
+  }
+
   return (
     <div className="component-wrapper audience">
       <div className="audience-header-wrapper">
@@ -66,6 +83,7 @@ const Audience = () => {
             <Table.HeaderCell>Phone Number</Table.HeaderCell>
             <Table.HeaderCell>Address</Table.HeaderCell>
             <Table.HeaderCell>Zip</Table.HeaderCell>
+            <Table.HeaderCell>Tag</Table.HeaderCell>
           </Table.Row>
         </Table.Header>
         <Table.Body>

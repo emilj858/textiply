@@ -12,6 +12,9 @@ const Header = () => (
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="mr-auto">
           <div className="nav-bar-links">
+            <NavLink exact to="/campaign" className="nav-link-anchor">
+            Campaigns
+            </NavLink>
             <NavLink exact to="/messages" className="nav-link-anchor">
             Messages
             </NavLink>
