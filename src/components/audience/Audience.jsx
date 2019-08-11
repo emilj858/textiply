@@ -22,7 +22,7 @@ const Audience = () => {
         <Table.Cell>San Diego</Table.Cell>
         <Table.Cell>
           Tag 1
-          <Icon name="plus" className="add-tag-icon" />
+          <Icon name="plus" className="add-tag-icon" onClick={() => setAddTagModal(true)} />
         </Table.Cell>
       </Table.Row>
       <Table.Row>

@@ -4,7 +4,7 @@ import { Button, Modal } from 'semantic-ui-react';
 
 const AddTagModal = props => (
   <Modal open dimmer="inverted" size="tiny" className="modal">
-    <Modal.Header>Upload CSV</Modal.Header>
+    <Modal.Header>Add Tags to User</Modal.Header>
     <Modal.Content>
       <tr>Tag 1</tr>
       <tr>Tag 1</tr>
