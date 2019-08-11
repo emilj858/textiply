@@ -1,0 +1,15 @@
+.component-wrapper {
+    .login-wrapper {
+    margin: 0 auto;
+    position: relative;
+    margin-top: 200px!important;
+        .input {
+            width: 100%;
+            padding-top: 15px;
+            //align @ icon
+            .email-icon {
+                margin-top: 8px;
+            }
+        }
+    }
+}

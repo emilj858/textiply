@@ -6,11 +6,13 @@ import Dashboard from './components/dashboard/Dashboard';
 import Messages from './components/messages/Messages';
 import Audience from './components/audience/Audience';
 import Campaign from './components/campaign/Campaign';
+import Login from './components/authentication/Login';
 
 const Routes = () => (
   <div>
     <Header />
     <Route exact path="/" component={Dashboard} />
+    <Route exact path="/login" component={Login} />
     <Route exact path="/campaign" component={Campaign} />
     <Route exact path="/messages" component={Messages} />
     <Route exact path="/audience" component={Audience} />
