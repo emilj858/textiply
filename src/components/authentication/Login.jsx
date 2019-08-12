@@ -16,14 +16,15 @@ const Login = () => (
                   <Icon name='at' className="email-icon" />
                   <input />
                 </Input>
-                <Input />
+                <Input placeholder='Password' />
               </Feed.Summary>
             </Feed.Content>
           </Feed.Event>
         </Feed>
       </Card.Content>
       <Card.Content extra>
-        <Button>Login</Button>
+        <Button className="primary">Login</Button>
+        <span className="forgot-password-link">Forgot Password?</span>
       </Card.Content>
     </Card>
   </div>
